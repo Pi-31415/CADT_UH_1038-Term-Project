@@ -1,0 +1,213 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  info [
+    "Simulation of the KUKA youBot robot."
+    "This model includes an accurate and fast simulation of the Meccanum wheels."
+    "The robot can be equiped with various sensors (including the Microsoft Kinect) and configured with zero, one or two arms."
+  ]
+  title "SwarmFormation"
+  basicTimeStep 16
+  FPS 24
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation -0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation 0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.21124875285778277 0.9030761580666351 0.3739350440218693 4.08510747128305
+  position -3.8252744553201983 3.880413027320311 -3.003781810220483
+  follow "Elisa-3_3"
+  followType "Pan and Tilt Shot"
+}
+TexturedBackground {
+  texture "noon_sunny_empty"
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 100 100
+  tileSize 5 5
+  appearance Parquetry {
+    type "light strip"
+  }
+}
+Youbot {
+  hidden position_0_0 1.655891679948808e-09
+  hidden position_0_1 2.9669388367159374e-09
+  hidden position_0_2 -3.989772040599426e-09
+  hidden position_0_3 2.1113369248879535e-09
+  hidden linearVelocity_0 -4.017280266608579e-05 5.314458928077764e-05 8.511343548056383e-07
+  hidden angularVelocity_0 1.3270726272690798e-05 -4.652130205743967e-09 0.0006150627582146611
+  hidden position_1_0 -4.200491116220815e-07
+  hidden rotation_2 0 0 -1 4.204134935041043e-07
+  hidden position_2_0 0.9024771629314186
+  hidden linearVelocity_2 -0.00014392197114539422 0.00016227916870432664 3.1273297847200247e-06
+  hidden angularVelocity_2 1.3293786726144486e-05 -4.421884234695776e-06 0.0006167104004543327
+  hidden rotation_3 0 -0.9999999999999999 0 0.9024771629314187
+  hidden position_3_0 -2.613422621766741
+  hidden linearVelocity_3 -0.024541779454451913 -0.030329127192029685 9.477331597969716e-06
+  hidden angularVelocity_3 0.00010155276423125037 1.7252723224848353e-05 0.5006273987807713
+  hidden rotation_4 0 1 0 2.613422621766741
+  hidden position_4_0 1.7799427072072875
+  hidden linearVelocity_4 -0.04641349844662475 -0.04475853658167465 1.4504820065258019e-05
+  hidden angularVelocity_4 5.6253143742080276e-05 6.03950341915335e-06 0.24372811507854455
+  hidden rotation_5 0 -1 0 1.7799427072072873
+  hidden position_5_0 -7.022944917189541e-10
+  hidden linearVelocity_5 -0.05038130813407714 -0.02830942156857494 1.5010169224358332e-05
+  hidden angularVelocity_5 5.6373035170723156e-05 6.073133366542061e-06 0.2444104540393757
+  hidden position_6_0 -9.855115107857485e-12
+  hidden position_6_1 8.428108649859646e-12
+  hidden linearVelocity_6 -0.07475297928513412 -0.030006335940589803 2.067719784567612e-05
+  hidden angularVelocity_6 5.637303775476597e-05 6.073404524904948e-06 0.2444104966643374
+  hidden linearVelocity_7 -0.09060458033188072 -0.031110980732830647 2.4362858307473033e-05
+  hidden angularVelocity_7 5.637343442428178e-05 6.073925172078902e-06 0.2444104998916905
+  hidden linearVelocity_8 -0.09060466835242316 -0.031111240925023487 2.4362879643225774e-05
+  hidden angularVelocity_8 5.6372643582622425e-05 6.072884283492058e-06 0.24441049989174796
+  hidden linearVelocity_9 -3.057328771378126e-05 0.00018594700839425827 5.066492459952777e-07
+  hidden angularVelocity_9 1.3277395106122082e-05 -4.608945488224697e-09 0.0006150671305579429
+  hidden linearVelocity_10 -3.0555028184218734e-05 0.00019002338851915824 7.992684868209088e-07
+  hidden angularVelocity_10 1.3262754615523129e-05 -4.611109191359606e-09 0.000615081203180968
+  hidden linearVelocity_11 -3.092893601871774e-05 -8.897796817539216e-05 1.0817399653977044e-06
+  hidden angularVelocity_11 1.3249121833349778e-05 -4.61090040807456e-09 0.0006150918899200437
+  hidden linearVelocity_12 -3.092590557712008e-05 -8.490158804793425e-05 2.4131055896645103e-07
+  hidden angularVelocity_12 1.3291134496385737e-05 -4.608467608787789e-09 0.0006150730914699937
+  translation -2.061956342332319 0.10192730562488247 0.16999903943168188
+  rotation 0.9999990257938256 -0.0010712634932596367 0.0008948776049013533 -1.5708405880389757
+  controllerArgs [
+    "demo"
+  ]
+}
+Elisa3 {
+  translation 0 -7.874710542301808e-06 -0.9999999999988053
+  rotation 1 0 0 4.369654477566293e-07
+  name "Elisa-3_1"
+  controller "swarm1"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0.49 -7.874710542301808e-06 -0.9999999999988053
+  rotation 1 0 0 4.369654477566293e-07
+  name "Elisa-3_2"
+  controller "swarm2"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation -0.5 -7.874710542301808e-06 -0.9999999999988053
+  rotation 1 0 0 4.369654477566293e-07
+  name "Elisa-3_3"
+  controller "swarm3"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0 -7.874710542355584e-06 -1.4999999999988054
+  rotation 0.9999999999999999 0 0 4.3696544906499144e-07
+  name "Elisa-3_4"
+  controller "swarm4"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation -0.5 -7.874710542355584e-06 -1.4999999999988054
+  rotation 0.9999999999999999 0 0 4.3696544906499144e-07
+  name "Elisa-3_5"
+  controller "swarm5"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0.51 -7.874710542355584e-06 -1.4999999999988054
+  rotation 0.9999999999999999 0 0 4.3696544906499144e-07
+  name "Elisa-3_6"
+  controller "swarm6"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0 -7.874710542345176e-06 -1.9999999999988054
+  rotation 1 0 0 4.369654475355778e-07
+  name "Elisa-3_7"
+  controller "swarm7"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation -0.5 -7.874710542345176e-06 -1.9999999999988054
+  rotation 1 0 0 4.369654475355778e-07
+  name "Elisa-3_8"
+  controller "swarm8"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0.52 -7.874710542345176e-06 -1.9999999999988054
+  rotation 1 0 0 4.369654475355778e-07
+  name "Elisa-3_9"
+  controller "swarm9"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+PlasticCrate {
+  translation -0.22999911032341872 0.29999526103234553 0.46
+  rotation -7.555670595062622e-18 -5.8172508835669575e-18 0.9999999999999999 1.5707970344309847
+  mass 0.1
+}
