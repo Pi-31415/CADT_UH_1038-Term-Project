@@ -16,7 +16,7 @@ This is a robotic simulation project we did for the class CADT-UH 1038 - Autonom
 
 ### Platform
 
-The simulation is done in [Webots robot simulator!](https://cyberbotics.com).
+The simulation is done in [Webots robot simulator](https://cyberbotics.com).
 All controller codes are written in C.
 
 ### Running
