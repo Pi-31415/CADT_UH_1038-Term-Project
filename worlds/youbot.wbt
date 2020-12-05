@@ -1,0 +1,164 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  info [
+    "Simulation of the KUKA youBot robot."
+    "This model includes an accurate and fast simulation of the Meccanum wheels."
+    "The robot can be equiped with various sensors (including the Microsoft Kinect) and configured with zero, one or two arms."
+  ]
+  title "SwarmFormation"
+  basicTimeStep 16
+  FPS 24
+  coordinateSystem "NUE"
+  contactProperties [
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation -0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation 0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.18465815608576136 0.9056995279523629 0.38158843071806275 3.976053168231505
+  position -3.8252744553201983 3.880413027320311 -3.003781810220483
+  follow "Elisa-3_3"
+  followType "Pan and Tilt Shot"
+}
+TexturedBackground {
+  texture "noon_sunny_empty"
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 100 100
+  tileSize 5 5
+  appearance Parquetry {
+    type "light strip"
+  }
+}
+Youbot {
+  translation -2.06 0.13 0.17
+  controllerArgs [
+    "demo"
+  ]
+}
+Elisa3 {
+  translation 0 0 -1
+  name "Elisa-3_1"
+  controller "swarm1"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0.49 0 -1
+  name "Elisa-3_2"
+  controller "swarm2"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation -0.5 0 -1
+  name "Elisa-3_3"
+  controller "swarm3"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0 0 -1.5
+  name "Elisa-3_4"
+  controller "swarm4"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation -0.5 0 -1.5
+  name "Elisa-3_5"
+  controller "swarm5"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0.51 0 -1.5
+  name "Elisa-3_6"
+  controller "swarm6"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0 0 -2
+  name "Elisa-3_7"
+  controller "swarm7"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation -0.5 0 -2
+  name "Elisa-3_8"
+  controller "swarm8"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Elisa3 {
+  translation 0.52 0 -2
+  name "Elisa-3_9"
+  controller "swarm9"
+  extensionSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+PlasticCrate {
+  translation -0.23 0.359997 0.46
+  rotation 0 0 1 1.5708
+  mass 0.1
+}
