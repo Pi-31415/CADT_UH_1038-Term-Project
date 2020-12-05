@@ -1,4 +1,5 @@
-# CADT-UH 1038 - Autonomous and Social Robots Final Term Project
+# CADT-UH 1038 - Autonomous and Social Robots 
+# Final Term Project
 ![Logo](adlogo.png)
 
 
